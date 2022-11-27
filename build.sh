@@ -36,5 +36,5 @@ logInfoMessage "File path where downloading happens: ${FILE_PATH}"
 logInfoMessage "S3 Bucket: ${S3_BUCKET}"
 logInfoMessage "Location of file in S3 Bucket: ${FILE_KEY}"
 
-#copyFileToS3 ${FILE_TO_BE_UPLOADED} ${S3_BUCKET} ${FILE_KEY}
+copyFileFromS3 ${S3_BUCKET} ${FILE_KEY} ${FILE_PATH} 
 saveTaskStatus ${TASK_STATUS} ${ACTIVITY_SUB_TASK_CODE}
